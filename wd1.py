@@ -162,6 +162,19 @@ def zad9():
     multipli_game()
 
 
+def zad10():
+    n = int(input("Podaj wielkosc litery: "))
+    print(" " * (n-1) + "*")
+    for i in range(n-1):
+        if i == (n//2 - 1):
+            if n % 2 == 0:
+                print(" " * (n//2 - 1) + "*" * (n+1))
+            else:
+                print(" " * (n//2) + "*" * n)
+        else:
+            print(" " * (n-i-2) + "*" + " " * (i*2 + 1) + "*")
+
+
 def main():
     # zad1()
     # zad2()
@@ -172,7 +185,8 @@ def main():
     # zad6()
     # zad7()
     # zad8()
-    zad9()
+    # zad9()
+    zad10()
 
 
 main()
