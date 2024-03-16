@@ -92,10 +92,9 @@ def zad8():
     print(s)
     for i in range(n):
         if not lista[i].isdigit():
-            del s[lista[i]]
+            if lista[i] in s:
+                del s[lista[i]]
     print(s)
-
-
 
 
 def main():
@@ -106,6 +105,7 @@ def main():
     # zad5()
     # zad6()
     # zad7()
-    # zad8()
+    zad8()
+
 
 main()
