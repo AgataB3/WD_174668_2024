@@ -28,7 +28,7 @@ def zad3():
             print(" " * (n - i), "A" * (i * 2 + 1))
 
 
-def zad4():
+def zad5():
     lista = []
     suma = 0
     n = int(input("Podaj n: "))
@@ -46,7 +46,7 @@ def main():
     # zad1()
     # zad2()
     # zad3()
-    zad4()
+    zad5()
 
 
 main()
