@@ -1,4 +1,5 @@
 import math
+import random
 
 
 def zad1():
@@ -27,10 +28,25 @@ def zad3():
             print(" " * (n - i), "A" * (i * 2 + 1))
 
 
+def zad4():
+    lista = []
+    suma = 0
+    n = int(input("Podaj n: "))
+    for i in range(n):
+        lista.append([x := random.randrange(1, 11) for j in range(n)])
+    for i in range(n):
+        print(lista[i])
+    for i in range(n):
+        for j in range(n):
+            suma += lista[i][j]
+    print(f'Suma wszystkich elementow: {suma}')
+
+
 def main():
     # zad1()
     # zad2()
-    zad3()
+    # zad3()
+    zad4()
 
 
 main()
